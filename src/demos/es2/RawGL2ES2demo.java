@@ -341,7 +341,7 @@ private String fragmentShaderString =
         // GLSL 1.3 is the minimum version that now has to be explicitly set.
         // This allows the shaders to compile using the latest
         // desktop OpenGL 3 and 4 drivers.
-        if(gl.isGL3core()){
+        if(gl.isGL3()){
             System.out.println("GL3 core detected: explicit add #version 130 to shaders");
             vertexShaderString = "#version 130\n"+vertexShaderString;
             fragmentShaderString = "#version 130\n"+fragmentShaderString;
